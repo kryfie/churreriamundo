@@ -107,3 +107,15 @@
   .flavor-copy p {font-size: 13px;}
   .info-inner span:first-child, .info-inner a {font-size: 11px;}
 }
+
+/* Menu 1 + Menu 2: rzeczywiste plansze przesłane przez właścicielkę. */
+.menu-pages {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start;}
+.menu-pages .image-button {display:block;position:relative;width:100%;padding:0;border:1px solid #d0a35a;border-radius:12px;background:#fffaf1;overflow:hidden;cursor:zoom-in;box-shadow:0 14px 35px #16020635;}
+.menu-pages .image-button img {display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;}
+.menu-pages .image-button:focus-visible {outline:4px solid #f8c861;outline-offset:4px;}
+.menu-pages .menu-zoom-label {position:absolute;right:14px;bottom:14px;z-index:1;color:#fff7ea;background:#54080edb;border:1px solid #eec87c;border-radius:50px;padding:10px 16px;font-size:14px;}
+.lightbox img {max-width:min(87vw, 950px);max-height:74vh;width:auto;height:auto;object-fit:contain;}
+.lightbox .lightbox-inner {min-width:0;}
+.lightbox .lightbox-fullsize {color:#2d0805;background:#f2c367;border-radius:50px;padding:12px 19px;font-size:14px;font-weight:700;margin-top:14px;text-decoration:none;}
+.lightbox .lightbox-fullsize:hover {background:#ffe2a5;}
+@media(max-width:700px){.menu-pages{grid-template-columns:1fr;gap:18px}.menu-pages .menu-zoom-label{font-size:13px;bottom:10px;right:10px}.lightbox img{max-width:88vw;max-height:72vh}.lightbox .lightbox-fullsize{font-size:13px;padding:11px 16px;}}

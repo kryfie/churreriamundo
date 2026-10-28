@@ -61,6 +61,7 @@
     }
     dialogImg.src = src;
     dialogImg.alt = caption || 'Powiększone zdjęcie';
+    dialog.querySelector('.lightbox-fullsize').href = src;
     dialogCaption.textContent = caption || '';
     dialog.showModal();
   }
