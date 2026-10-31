@@ -56,9 +56,21 @@ Na stronie obecnie wpisano `9:00–20:00` na wszystkie dni zgodnie z PDF. Dodał
 
 Przycisk „Jak do nas trafić” oraz „Zobacz na mapie” przewijają do osadzonej mapy na dole strony. Pinezka jest wyszukiwana według `Churreria Mundo, Grochowa 2, lokal 13, 15-423 Białystok`. Przycisk „Otwórz w Google Maps” daje możliwość dalszej nawigacji; po publikacji **zweryfikuj wskazany punkt na mapie**, bo Google rozpoznaje lokalizację automatycznie na podstawie adresu/nazwy.
 
+## Nagłówek / logo
+
+Logo jest plikiem `assets/logo.webp`. Trzy wiersze nazwy i hasła są teraz jednym wektorowym plikiem `assets/brand-lockup.svg`: kontury liter mają dokładnie taką samą szerokość, dzięki czemu nie zależą od czcionek urządzenia.
+
+Poprawiono błąd z obcinaniem napisu: reguła okrągłego logo dotyczy wyłącznie samego logo, a nie napisu SVG. Sprawdzono lokalnie nagłówek w Chromium dla 320, 390, 768, 1180, 1440 i 1720 px.
+
 ## Social media
 
-Kolejność ikon (również w menu mobilnym): Instagram, Facebook, TikTok, YouTube. W `site-config.js` uzupełnij brakujące adresy. Dopóki są puste, ich kliknięcie pokaże informację demo, a nie przekieruje na przypadkową stronę.
+Kolejność ikon (również w menu mobilnym): Instagram, Facebook, TikTok, YouTube. Linki są już uzupełnione **wszędzie na stronie** (nagłówek, menu mobilne i sekcja kontaktowa):
+- Instagram: https://www.instagram.com/churreria.mundo.bialystok/
+- Facebook: https://www.facebook.com/churreria.mundo.bialystok/
+- TikTok: https://www.tiktok.com/@churreriamundo
+- YouTube: https://www.youtube.com/@ChurreriaMUNDO
+
+Adresy możesz później zmienić w jednym pliku `site-config.js`. Umieszczono je również bezpośrednio w linkach HTML, więc działają nawet bez JavaScript.
 
 ## Inne
 
