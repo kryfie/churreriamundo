@@ -1,3 +1,13 @@
+# Churreria Mundo — poprawka zielonych symboli na iPhone (29.10.2026)
+
+**Co naprawiono:** duże zielone symbole pojawiające się na iPhone w sekcjach „Co to jest churreria?” i „Współpraca” nie były zdjęciami. W kodzie był znak `✳`, który Safari/iOS potrafi wyświetlić jako wielką zieloną emoji. Zastąpiłem go neutralnym SVG w sekcji historii oraz subtelnymi dekoracjami CSS w tle. Poprawka obejmuje także mały symbol w nagłówku. Dodany parametr wersji przy `styles.css` wymusza odświeżenie stylów na telefonie.
+
+**Zostawiono bez zmian:** galerię, zdjęcia, Menu1 i Menu2, interakcje, linki, układ i treści strony.
+
+**Wgraj na GitHub Pages:** rozpakuj ZIP, skopiuj wszystkie pliki wraz z folderem `assets` do repozytorium `churreriamundo`, zastąp stare, Commit to main, Push origin. Następnie otwórz `https://kryfie.github.io/churreriamundo/` i odśwież stronę.
+
+---
+
 # Churreria Mundo — demo GitHub Pages (Menu 1 i Menu 2)
 
 ## Co poprawiono
