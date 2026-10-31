@@ -26,3 +26,10 @@
 Jeśli widzisz pusty obrazek, sprawdź, czy istnieje https://kryfie.github.io/churreriamundo/assets/Menu1.png — jeśli nie, plik `assets/Menu1.png` nie został wysłany do GitHuba.
 
 Brak instalacji lub budowania projektu — statyczna strona HTML/CSS/JS.
+
+
+## Zmiany 31.10.2026 — proporcje i adres
+- Duże logo i poprawione proporcje napisu CHURRERIA MUNDO w nagłówku.
+- Adres w paskach i stopce: Grochowa 2 lok. 13.
+- Adres kontaktowy: ul. Grochowa 2, lok. 13; 15-423 Białystok.
+- Zachowane ikony Instagram, TikTok i YouTube. Na telefonie widoczne po otwarciu menu.
