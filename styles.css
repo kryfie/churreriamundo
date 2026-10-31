@@ -457,3 +457,11 @@
  .header .brand-text b{font-size:31px;}
  .header .brand-text small{font-size:5.1px;}
 }
+
+
+/* 31.10.2026: drobne zwężenie samego napisu CHURRERIA.
+   Zmieniamy rozstaw liter, nie zmieniamy proporcji logo, MUNDO ani sloganu. */
+.header .brand-text strong {
+  width: 90%;
+  align-self: flex-start;
+}

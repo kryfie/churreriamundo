@@ -79,3 +79,6 @@ Adresy możesz później zmienić w jednym pliku `site-config.js`. Umieszczono j
 ## Inne
 
 Zachowano oba menu `Menu1.png` i `Menu2.png`, zdjęcia i mobilne poprawki. W stopce widnieje standardowy tekst zastrzegający prawa autorskie; nazwę autora/portfolio można dodać później.
+
+### Korekta napisu CHURRERIA (31.10.2026)
+Zmieniono wyłącznie szerokość górnego napisu CHURRERIA (do 90% poprzedniej) przy zachowaniu rozmiaru logo, MUNDO i reszty strony. Wersja CSS ma nowy identyfikator, żeby Safari/Chrome nie używały starego pliku z cache.
