@@ -1,35 +1,65 @@
-# Churreria Mundo — poprawka zielonych symboli na iPhone (29.10.2026)
+# Churreria Mundo – strona WWW po poprawkach z 31.10.2026
 
-**Co naprawiono:** duże zielone symbole pojawiające się na iPhone w sekcjach „Co to jest churreria?” i „Współpraca” nie były zdjęciami. W kodzie był znak `✳`, który Safari/iOS potrafi wyświetlić jako wielką zieloną emoji. Zastąpiłem go neutralnym SVG w sekcji historii oraz subtelnymi dekoracjami CSS w tle. Poprawka obejmuje także mały symbol w nagłówku. Dodany parametr wersji przy `styles.css` wymusza odświeżenie stylów na telefonie.
+Gotowa statyczna strona do GitHub Pages lub Netlify. Nie wymaga kompilowania ani instalowania bibliotek.
 
-**Zostawiono bez zmian:** galerię, zdjęcia, Menu1 i Menu2, interakcje, linki, układ i treści strony.
+## Publikacja na GitHub Pages
 
-**Wgraj na GitHub Pages:** rozpakuj ZIP, skopiuj wszystkie pliki wraz z folderem `assets` do repozytorium `churreriamundo`, zastąp stare, Commit to main, Push origin. Następnie otwórz `https://kryfie.github.io/churreriamundo/` i odśwież stronę.
+1. Rozpakuj ZIP i skopiuj **całą zawartość** do repozytorium `churreriamundo` (pliki `index.html`, `styles.css`, `script.js`, `site-config.js`, `gallery-data.js`, katalog `assets/` itd.).
+2. Zrób `Commit to main` oraz `Push origin` w GitHub Desktop.
+3. W GitHub sprawdź `Settings → Pages`: źródło `main` i `/(root)`.
+4. Otwórz `https://kryfie.github.io/churreriamundo/` i odśwież, jeśli wyświetla starą wersję.
 
----
+## Gdzie dodawać nowe zdjęcia do galerii produktów
 
-# Churreria Mundo — demo GitHub Pages (Menu 1 i Menu 2)
+Zdjęcia dodawaj do folderów repozytorium:
 
-## Co poprawiono
-- W sekcji **Nasze menu** widać teraz dwie aktualne grafiki `assets/Menu1.png` i `assets/Menu2.png`, w pełnej rozdzielczości, zamiast niewczytującego się obrazka.
-- Obie plansze są obok siebie na komputerze i jedna pod drugą na telefonie.
-- Kliknięcie otwiera podgląd, a link **Otwórz obraz w pełnym rozmiarze** pokazuje oryginalną grafikę.
-- Zachowano całą pozostałą stronę i zwiększone wcześniej litery.
+- Churros → `assets/galerie/churros/`
+- Porras → `assets/galerie/porras/`
+- Czekolada → `assets/galerie/czekolada/`
+- Café con leche → `assets/galerie/cafe-con-leche/`
+- Ice Bombón → `assets/galerie/ice-bombon/`
 
-## Aktualizacja w GitHub Desktop
-1. Rozpakuj ten ZIP. **Nie wrzucaj samego pliku ZIP do repozytorium.**
-2. Skopiuj **wszystkie pliki i folder `assets/`** do katalogu repozytorium `churreriamundo`; zastąp pliki o tych samych nazwach.
-3. Sprawdź, że na GitHubie masz `index.html` i folder `assets` w głównym katalogu oraz pliki `assets/Menu1.png` i `assets/Menu2.png`. Uważaj na wielkie litery w nazwach plików!
-4. W GitHub Desktop kliknij `Commit to main`, potem `Push origin`.
-5. Wejdź na https://kryfie.github.io/churreriamundo/#menu i odśwież Ctrl+F5.
+**Ważne:** GitHub Pages sam nie odczytuje listy plików w folderze. Po dodaniu zdjęć dopisz ich ścieżki w `gallery-data.js` w odpowiedniej tablicy `photos`. Na przykład:
 
-Jeśli widzisz pusty obrazek, sprawdź, czy istnieje https://kryfie.github.io/churreriamundo/assets/Menu1.png — jeśli nie, plik `assets/Menu1.png` nie został wysłany do GitHuba.
+```js
+churros: {
+  title: 'Churros',
+  photos: [
+    'assets/churros.webp',
+    'assets/galerie/churros/churros-02.webp',
+    'assets/galerie/churros/churros-03.jpg'
+  ]
+},
+```
 
-Brak instalacji lub budowania projektu — statyczna strona HTML/CSS/JS.
+Koniecznie prześlij także zmieniony `gallery-data.js` i zrób `Commit → Push`. Po kliknięciu zdjęcia produktu pojawia się jego własna galeria ze strzałkami i licznikiem zdjęć. Na start każda galeria zawiera jedno autentycznie używane w stronie zdjęcie; nie dodawaliśmy sztucznych zdjęć.
 
+Warto zapisywać zdjęcia jako `.webp`, ok. 1200–1600 px szerokości. To oszczędza transfer na Netlify Free.
 
-## Zmiany 31.10.2026 — proporcje i adres
-- Duże logo i poprawione proporcje napisu CHURRERIA MUNDO w nagłówku.
-- Adres w paskach i stopce: Grochowa 2 lok. 13.
-- Adres kontaktowy: ul. Grochowa 2, lok. 13; 15-423 Białystok.
-- Zachowane ikony Instagram, TikTok i YouTube. Na telefonie widoczne po otwarciu menu.
+## Formularz kontaktowy – WAŻNA aktywacja
+
+Formularz pod social mediami wysyła na `biurochmu@gmail.com` za pośrednictwem usługi **FormSubmit.co** – bo GitHub Pages nie ma zaplecza do samodzielnego wysyłania e-maili.
+
+**Aby odbierać wiadomości:**
+1. Opublikuj stronę i wyślij pierwszą **testową** wiadomość przez formularz.
+2. Sprawdź pocztę `biurochmu@gmail.com` (także Spam) – FormSubmit wyśle e-mail z linkiem aktywacyjnym.
+3. Potwierdź formularz; wykonaj kolejny test i upewnij się, że wiadomość dochodzi.
+4. Bez tej aktywacji formularz nie będzie normalnie dostarczał zgłoszeń. Potwierdzenie jest wymagane również po ewentualnych zmianach dostawcy formularza.
+
+Dane formularza przechodzą przez zewnętrzną usługę FormSubmit. Przed produkcyjnym udostępnieniem opracuj informacje o prywatności, tożsamości administratora danych i stosowanych usługach (w tym mapie Google); sama notka pod formularzem nie zastępuje polityki prywatności.
+
+## Godziny z Google
+
+Na stronie obecnie wpisano `9:00–20:00` na wszystkie dni zgodnie z PDF. Dodałem przycisk „Sprawdź godziny otwarcia w Google”. **Nie ma automatycznej synchronizacji** – wymagałaby osobnej integracji z API Google, uprawnień i konfiguracji; strona na GitHub Pages nie pobiera tych danych sama. Godziny możesz edytować w `index.html`.
+
+## Mapa Google
+
+Przycisk „Jak do nas trafić” oraz „Zobacz na mapie” przewijają do osadzonej mapy na dole strony. Pinezka jest wyszukiwana według `Churreria Mundo, Grochowa 2, lokal 13, 15-423 Białystok`. Przycisk „Otwórz w Google Maps” daje możliwość dalszej nawigacji; po publikacji **zweryfikuj wskazany punkt na mapie**, bo Google rozpoznaje lokalizację automatycznie na podstawie adresu/nazwy.
+
+## Social media
+
+Kolejność ikon (również w menu mobilnym): Instagram, Facebook, TikTok, YouTube. W `site-config.js` uzupełnij brakujące adresy. Dopóki są puste, ich kliknięcie pokaże informację demo, a nie przekieruje na przypadkową stronę.
+
+## Inne
+
+Zachowano oba menu `Menu1.png` i `Menu2.png`, zdjęcia i mobilne poprawki. W stopce widnieje standardowy tekst zastrzegający prawa autorskie; nazwę autora/portfolio można dodać później.
