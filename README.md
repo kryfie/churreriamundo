@@ -58,9 +58,13 @@ Przycisk „Jak do nas trafić” oraz „Zobacz na mapie” przewijają do osad
 
 ## Nagłówek / logo
 
-Logo jest plikiem `assets/logo.webp`. Trzy wiersze nazwy i hasła są teraz jednym wektorowym plikiem `assets/brand-lockup.svg`: kontury liter mają dokładnie taką samą szerokość, dzięki czemu nie zależą od czcionek urządzenia.
+Logo to `assets/logo.webp`. Napis CHURRERIA / MUNDO / CHURROS · CHOCOLATE · CAFFÈ przywrócono jako trzy oddzielne wiersze tekstu HTML, ponieważ taka wersja wyglądała lepiej niż SVG. Wielkości i odstępy są responsywne w `styles.css`.
 
-Poprawiono błąd z obcinaniem napisu: reguła okrągłego logo dotyczy wyłącznie samego logo, a nie napisu SVG. Sprawdzono lokalnie nagłówek w Chromium dla 320, 390, 768, 1180, 1440 i 1720 px.
+## Sekcja „Poczuj klimat Mundo”
+
+Trzy przesłane kolaże są w plikach `assets/klimat-1.png`, `assets/klimat-2.png`, `assets/klimat-3.png`, w dokładnie tej kolejności od lewej do prawej na komputerze i od góry do dołu na telefonie. Kliknięcia otwierają istniejące, oddzielne galerie (`klimat-kawy`, `klimat-czekolada`, `klimat-napoje`). Nowe zdjęcia do galerii dopisuj w `gallery-data.js`; można umieścić je w folderach `assets/galerie/klimat-kawy/`, `assets/galerie/klimat-czekolada/`, `assets/galerie/klimat-napoje/`.
+
+Sekcja ma brązowe tło. Sekcja „Nasze menu” ma białe tło pod plansze menu.
 
 ## Social media
 
