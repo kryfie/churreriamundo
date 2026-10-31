@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="150" viewBox="0 0 420 150" role="img" aria-labelledby="title desc">
+  <title id="title">Churreria Mundo</title>
+  <desc id="desc">Churros · Chocolate · Caffè</desc>
+  <style>
+    .top { font-family: "DM Sans", Arial, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 2px; fill: #f1bd63; }
+    .main { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; font-size: 84px; fill: #fff8ef; }
+    .bottom { font-family: "DM Sans", Arial, sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 1.7px; fill: #f1bd63; }
+  </style>
+  <text class="top" x="0" y="24" textLength="340" lengthAdjust="spacingAndGlyphs">CHURRERIA</text>
+  <text class="main" x="0" y="90" textLength="340" lengthAdjust="spacingAndGlyphs">MUNDO</text>
+  <text class="bottom" x="0" y="123" textLength="340" lengthAdjust="spacingAndGlyphs">CHURROS · CHOCOLATE · CAFFÈ</text>
+</svg>

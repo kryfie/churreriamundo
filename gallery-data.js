@@ -25,4 +25,17 @@ window.MUNDO_GALLERIES = {
     title: 'Ice Bombón',
     photos: ['assets/ice-bombon.webp']
   }
+,
+  'klimat-kawy': {
+    title: 'Kawy Mundo',
+    photos: ['assets/cafe-con-leche.webp']
+  },
+  'klimat-czekolada': {
+    title: 'Gorąca czekolada Mundo',
+    photos: ['assets/chocolate.webp']
+  },
+  'klimat-napoje': {
+    title: 'Napoje Mundo',
+    photos: ['assets/ice-bombon.webp']
+  }
 };

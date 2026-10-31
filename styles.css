@@ -334,3 +334,18 @@
   .header .nav .nav-mobile-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;padding:8px;border:1px solid #ffffff66;border-radius:50%}
   .header .nav .nav-mobile-social svg{width:20px;height:20px}
 }
+
+
+/* Aktualizacja 31.10.2026 v2 — lockup SVG, większe menu, poprawione sekcje */
+.brand{gap:16px}
+.brand img{width:112px;height:112px}
+.brand-text{display:block;width:340px;flex:0 0 340px;line-height:1}
+.brand-text .brand-lockup{display:block;width:100%;height:auto}
+.header .nav a{font-size:15px}
+@media(min-width:1321px){.header .nav a{font-size:15px}}
+.story-second h3 em{color:#aa4e16;font-style:italic;font-weight:400}
+@media(max-width:1320px){.brand-text{width:308px;flex-basis:308px}.header .nav a{font-size:14px}}
+@media(max-width:1080px){.brand img{width:98px;height:98px}.brand-text{width:270px;flex-basis:270px}.header .nav a{font-size:18px}}
+@media(max-width:960px){.brand img{width:90px;height:90px}.brand-text{width:235px;flex-basis:235px}}
+@media(max-width:700px){.brand img{width:78px;height:78px}.brand-text{width:186px;flex-basis:186px}}
+@media(max-width:440px){.brand img{width:70px;height:70px}.brand-text{width:164px;flex-basis:164px}}
